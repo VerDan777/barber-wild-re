@@ -1,0 +1,102 @@
+.basket
+{
+   
+    
+        &__header
+        {    //box model
+            position: relative;
+            margin-bottom: 0px;
+            
+            margin-left: 100px;
+            padding: 40px;
+            padding-left: 210px;
+             padding-top: 0px;
+            padding-bottom: 0px;
+            border: 1px solid #e9dcca;
+            height: 202px;
+            //visual
+            background-color: #ffffff;
+          
+          
+
+        }
+        
+        &__volume{
+             //typography
+            
+            color:#8a8f92;
+            font-family:$mainFont ;
+            font-size: 1.125rem;
+            font-weight: 300;  
+            
+                }
+        &--clay
+        {
+            //box model
+            height:220px;
+            
+        }
+        &__image
+        {
+            //box model
+            
+            width: 200px;
+            height: 200px;
+            
+            //positioning
+            position: absolute;
+            top: -40px;
+            top: -10px;
+            left: 0;
+            
+            img
+            {
+                
+            //box model
+            height: 200px;     
+            width: 200px;
+                
+            }
+        }
+        
+          
+            &__input
+            {
+                //box model
+                
+                //visual
+             
+                
+            }
+ 
+    
+        
+        &__title
+        {
+            //typography
+            
+            color: #152026;
+            font-family: "Roboto Slab", serif;
+            font-weight: 300;
+            line-height: 1.4;   
+            
+        }
+        &__price
+        {       
+            //box-model
+            
+            padding-bottom: 0px;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+            
+             //typography
+            color: #152026;
+            font-family: "Roboto Slab", serif;
+            font-size: 3rem;
+            font-weight:400; 
+             
+            
+        }
+    
+}
