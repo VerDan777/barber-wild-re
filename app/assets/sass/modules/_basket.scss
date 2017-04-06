@@ -1,0 +1,308 @@
+
+// .basket {
+//     &__header {
+//         // positioning
+//         position: relative;
+
+//         // box model
+//         height: 200px;
+//         margin: 0 10px;
+//         margin-bottom:50px;
+        
+//         padding: 40px 30px;
+
+//         // typography
+//         text-align: center;
+
+//         // visual
+//         background-color: #ffffff;
+//         border: 1px solid $justSand;
+        
+
+   
+
+
+//         @include atDesktop {
+//             // box model
+//             margin-left: 10px;
+//             padding: 40px;
+//             padding-left: 230px;
+//             padding-top:10px;
+
+//             // typography
+//             text-align: left;
+//         }
+//     }
+
+//     &__image {
+//         position: absolute;
+//         bottom:100px;
+//         display: none;
+//         // box model
+//         display: inline-block;
+//         height: 150px;
+//         width: 150px;
+//         margin: 0 -30px;
+//         //visual
+//         background-repeat: no-repeat;
+//         // background-size: 100%;
+
+//         img {
+//             //positioning
+//             position: absolute;
+//             bottom: 150px;
+//             display:none;
+//             // box model
+//             height: 100%;
+//             width: 100%;
+           
+//             // positioning
+     
+//         }
+      
+            
+//         }
+
+       
+      
+
+//     &__title {
+//         @include atDesktop {
+//             //box model
+//             //typography
+//             font-size: 1.125rem;
+//             font-weight: 300;
+//         }
+//         color: $darkBlue;
+//         font-family: $mainFont;
+//         font-size: 1rem;
+//         font-weight: 400;
+//         line-height: 1.4;
+
+    
+//     }
+
+//     // &__volume {
+//          // typography
+//                 color: $darkSand;
+//                 font-family: $mainFont;
+//                 // font-size: 1rem;
+//                 //positioning
+//                 position: relative;
+                    
+//                 // typography
+//                 color:#8a8f92;
+
+            
+//     //     }
+        
+//     // }
+
+//     // &__price {
+    
+ 
+//     // }
+//      &__input {
+         
+//          @include atDesktop {
+//              //box model
+//              width: 50px;
+//              //visual
+//              outline: none;
+//              //visual
+//              border-radius: 50px;
+
+
+//          }
+       
+//         }
+    
+//      &__total {
+//          @include atDesktop {
+//          //position
+//          position: absolute;
+//          left: 200px; 
+//          //box model
+//          display: inline-block;
+//          height: 48px;
+//          padding: 0 30px;
+//          padding-top: 15px;
+//          color: $darkestSand;
+//          font-family: $captionFont;
+//          font-size: 1.125rem;
+//          text-decoration: none;
+//          background-color: $justSand;
+//          border-radius: 24px;
+//          box-shadow: 2px 2px 5px 0 rgba($darkestSand, 0.45),
+//          inset 0 0 1px 0 rgba($darkSand, 0.44);
+        
+//          }
+//      }
+//     // &__quantity {
+//     //     // @include atDesktop {
+//     //     //     //positioning
+//     //     //     //box model 
+            
+            
+//     //     //     //typography
+//     //     //     color: $darkBlue;
+//     //     //     font-family: $mainFont;
+//     //     //     font-size: 1.5rem;
+//     //     //     font-weight: 300;
+            
+//     //     // }
+//     // }
+//     // &__summary {
+//     // // @include atDesktop {
+//     // //     //typography
+//     // //     font-size:1.125rem; 
+//     // //     color: $darkBlue;
+//     // //     font-family: $mainFont;
+//     // //     font-weight: 400;
+//     // //     //box model
+//     // //     padding-left: 400px;
+        
+//     // //     //visual
+//     // //     background-image: url('');
+//     // // }
+       
+//     // }
+    
+    
+// }
+.basket {
+     &__header {
+        // positioning
+        position: relative;
+
+        // box model
+        margin: 0 10px;
+        margin-bottom: 0px;
+        padding: 40px 30px;
+        padding-bottom: 0px;
+        
+
+        // typography
+        text-align: center;
+
+        // visual
+        background-color: #ffffff;
+        border: 1px solid $justSand;
+
+        @include atDesktop {
+            // box model
+            margin-left: 0px;
+            padding: 0px;
+            padding-left:230px;
+
+            // typography
+            text-align: left;
+        }
+        &--total {
+            list-style-type: none;
+        }
+    }
+    &__image {
+        // box model
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        height: 400px;
+        width: 400px;
+        margin: 0px;
+        //positiong 
+        position: relative;
+        bottom: 100px;
+
+        img {
+            // box model
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        height: 400px;
+        width: 400px;
+        margin: 0px;
+        @include atDesktop {
+            //box model 
+
+            width: 200px; 
+            height: 200px;
+            
+            
+
+        }
+        }
+
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            top: 50px;
+            left: 0;
+
+            // box model
+            margin: 0;
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    &__title {
+        // typography
+        color: $darkBlue;
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @include atDesktop {
+            // typography
+            font-size: 2rem;
+            font-weight: 300;
+        }
+    }
+
+    &__volume {
+        // typography
+        color: $darkSand;
+        @include atDesktop {
+        font-family: $mainFont;
+        font-size: 1.125rem;
+        color:#8a8f92;
+
+        }
+    }
+    &__input {
+
+        @include atDesktop {
+        //box model
+        width: 70px;
+
+        //visual
+        border-radius: 50px;
+        border-bottom-color:$lightSands;
+        outline: none;
+        }
+    }
+
+    &__price {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+
+        // typography
+        @include atDesktop {
+        font-size: 2rem;
+        color: $darkBlue;
+        font-family: $mainFont;
+        //box  model 
+        padding-left: 650px;
+            
+
+        }
+    }
+   
+
+}
+
+

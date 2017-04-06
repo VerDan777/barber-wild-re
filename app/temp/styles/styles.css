@@ -977,11 +977,10 @@ body {
       background-color: #860d00;
       background-color: #590900;
       box-shadow: 2px 4px 14px 0 rgba(53, 1, 0, 0.45), inset 0 0 32px 0 rgba(53, 1, 0, 0.1); }
-
-button.button {
-  padding-top: 0;
-  margin-top: 20px;
-  border: none; }
+  .button button.button {
+    padding-top: 0;
+    margin-top: 20px;
+    border: none; }
 
 .site-footer {
   position: relative;
@@ -1366,3 +1365,107 @@ button.button {
     .order-table td:nth-child(3n) {
       padding-right: 0;
       text-align: right; }
+
+.basket__header {
+  position: relative;
+  margin: 0 10px;
+  margin-bottom: 0px;
+  padding: 40px 30px;
+  padding-bottom: 0px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e9dcca; }
+  @media (min-width: 1200px) {
+    .basket__header {
+      margin-left: 0px;
+      padding: 0px;
+      padding-left: 230px;
+      text-align: left; } }
+  .basket__header--total {
+    list-style-type: none; }
+
+.basket__image {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  height: 400px;
+  width: 400px;
+  margin: 0px;
+  position: relative;
+  bottom: 100px; }
+  .basket__image img {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    height: 400px;
+    width: 400px;
+    margin: 0px; }
+    @media (min-width: 1200px) {
+      .basket__image img {
+        width: 200px;
+        height: 200px; } }
+  @media (min-width: 1200px) {
+    .basket__image {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      margin: 0;
+      height: 200px;
+      width: 200px; } }
+
+.basket__title {
+  color: #152026;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4; }
+  @media (min-width: 1200px) {
+    .basket__title {
+      font-size: 2rem;
+      font-weight: 300; } }
+
+.basket__volume {
+  color: #c9aa71; }
+  @media (min-width: 1200px) {
+    .basket__volume {
+      font-family: "Roboto Slab", serif;
+      font-size: 1.125rem;
+      color: #8a8f92; } }
+
+.basket__input {
+  width: 50px;
+  border-radius: 50px; }
+
+.basket__price {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px; }
+  @media (min-width: 1200px) {
+    .basket__price {
+      font-size: 2rem;
+      color: #152026;
+      font-family: "Roboto Slab", serif;
+      padding-left: 650px; } }
+
+.social {
+  position: relative;
+  left: 43%;
+  top: 260px;
+  display: inline-block; }
+  .social__vk {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px; }
+    .social__vk:hover {
+      color: red; }
+  .social__fb {
+    width: 50px;
+    height: 50px; }
+    .social__fb:hover {
+      color: red; }
+  .social__in {
+    margin-left: 50px;
+    width: 50px;
+    height: 50px; }
+    .social__in:hover {
+      color: red; }

@@ -49,14 +49,15 @@
         }
     }
 
-    &--right-m {
-        // box model
-        // margin-right: 40px;
-    }
+    // &--right-m {
+    //     // box model
+    //     // margin-right: 40px;
+    // }
 
     &--red {
         // positioning
         position: relative;
+    
 
         // typography
         color: #ffffff;
@@ -79,7 +80,7 @@
                  inset 0 0 32px 0 rgba(#350100, 0.1);
         }
     }
-}
+   
 
 button.button {
     // box model
@@ -88,4 +89,5 @@ button.button {
 
     // visual
     border: none;
+}
 }
