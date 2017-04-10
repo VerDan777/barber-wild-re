@@ -88,11 +88,11 @@
         }
 
         &.current {
-            // typography
-            color: $justSand;
+                 // typography
+                color: $justSand;
             
-            // visual
-            cursor: default;
+                // visual
+                cursor: default;
 
             &::before {
                 content: "";
