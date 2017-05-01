@@ -1,0 +1,98 @@
+.cart {
+    // positioning
+        position: absolute;
+        // z-index: 1;
+        top: 0;
+        right: 0;
+
+        // box model
+        display: none;
+        // width: 400px;
+        // float: right;
+        // padding: 15px 30px;
+        // border: 1px solid red;
+
+        // // typography
+        // color: $darkSand;
+        // font-family: $captionFont;
+        // font-size: 1rem;
+
+        @include atDesktop {
+            // box model
+            display: inline-block;
+        }
+
+        a {
+            // box model
+            display: block;
+            padding: 15px 30px;
+            padding-top: 21px;
+
+            // typography
+            color: $darkSand;
+            font-family: $captionFont;
+            font-size: 1rem;
+            text-decoration: none;
+            //effects
+            transition: all 0.25s ease-out;
+   
+
+            &:hover
+            {
+             // typography
+             color:$justSand;
+                 &::before {   
+                // visual
+                opacity: 1;
+            }
+            }
+                &.current {
+            // typography
+            color: $justSand;
+            
+            // visual
+            cursor: default;
+
+            &::before {
+                content: "";
+
+                // positioning
+                position: absolute;
+                top: 1px;
+                left: 50%;
+                transform: translateX(165%);
+                z-index: 1;
+
+                // box model
+                height: 24px;
+                width: 600px;
+
+                // visual
+                background-image: url("../../assets/img/menu-deco-up.png");
+                opacity: 1;
+                pointer-events: none;
+            }
+
+            &::after {
+                content: "";
+
+                // positioning
+                position:absolute;
+                bottom: -1px;
+                left: 50%;
+                transform: translateX(165%);
+                z-index: 1;
+                
+
+                // box model
+                height: 24px;
+                width: 600px;
+
+                // visual
+                background-image: url("../../assets/img/menu-deco-down.png");
+                pointer-events: none;
+            }
+        }
+        }
+    
+}

@@ -1,0 +1,22 @@
+.site-footer {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 375px;
+    // margin-bottom: 30px;
+
+    // visual
+    background-image: url('../../assets/img/footer-bg-m.jpg');
+    background-position: center bottom;
+
+    @include atDesktop {
+        // box model
+        height: 600px;
+        margin-bottom: 48px;
+
+        // visual
+        background-image: url('../../assets/img/footer-bg.jpg');
+        
+    }
+}

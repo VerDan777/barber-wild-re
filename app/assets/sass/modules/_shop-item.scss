@@ -1,0 +1,244 @@
+.shop-item {
+    // positioning
+    position: relative;
+    // box model
+    margin: 0 10px;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    // typography
+    color: $darkBlue;
+    font-family: $mainFont;
+    text-align: center;
+    // visual
+    background-color: #ffffff;
+    border: 1px solid $justSand;
+    overflow: hidden;
+    @include atDesktop {
+        // box model
+        margin: 0 auto;
+        width: 600px;
+        padding: 0;
+        padding-bottom: 200px;
+        // typography
+        text-align: left;
+        // visual
+        background-color: transparent;
+        border: none;
+        overflow: visible;
+    }
+    &--alt {
+        @include atDesktop {
+            .shop-item__description {
+                // box model
+                margin: 0 auto;
+                padding-left: 40px;
+                width: 1000px;
+                padding-right: 400px;
+            }
+        }
+    }
+    &__image {
+        // positioning
+        z-index: -1;
+        // box model
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        margin: 0 -31px;
+        // border: 1px solid red;
+        // visual
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            // box model
+            height: 600px;
+            width: 600px;
+            margin: 0;
+            .shop-item--clay & {
+                // positioning
+                position: absolute;
+                top: -70px;
+                left: -480px;
+                z-index: 4;
+            }
+            .shop-item--oil & {
+                // positioning
+                position: absolute;
+                top: -50px;
+                right: -400px;
+                z-index: 4;
+            }
+            .shop-item--pomade & {
+                // positioning
+                position: absolute;
+                top: -50px;
+                left: -500px;
+                z-index: 4;
+            }
+            .shop-item--soap & {
+                // positioning
+                position: absolute;
+                top: -30px;
+                right: -460px;
+                //box model
+                width:575px;
+            }
+        }
+        .shop-item--clay & {
+            // visual
+            background-image: url('../../assets/img/bnew_clay.png');
+        }
+        .shop-item--oil & {
+            // visual
+            background-image: url('../../assets/img/bnew_beard_oil.png');
+        }
+        .shop-item--pomade & {
+            // visual
+            background-image: url('../../assets/img/bnew_pomade_j.png');
+        }
+        .shop-item--soap & {
+            // visual
+            background-image: url('../../assets/img/bnew_soap.png');
+        }
+    }
+    &__deco {
+        // positioning
+        position: relative;
+        // box model
+        display: none;
+        // visual
+        background-repeat: no-repeat;
+        @include atDesktop {
+            // box model
+            display: block;
+        }
+        .shop-item--clay & {
+            // positioning
+            position: absolute;
+            top: 80px;
+            right: -500px;
+            z-index: -1;
+            // box model
+            height: 675px;
+            width: 885px;
+            // visual
+            background-image: url('../../assets/img/clay-right.png');
+        }
+        .shop-item--oil & {
+            // positioning
+            position: absolute;
+            top: -150px;
+            left: -520px;
+            z-index: -1;
+            // box model
+            height: 795px;
+            width: 671px;
+            // visual
+            background-image: url('../../assets/img/oil-left.png');
+        }
+        .shop-item--pomade & {
+            // positioning
+            position: absolute;
+            top: 20px;
+            right: -510px;
+            z-index: -1;
+            // box model
+            height: 680px;
+            width: 701px;
+            // border: 1px solid red;
+            // visual
+            background-image: url('../../assets/img/pomade-right.png');
+        }
+        .shop-item--soap & {
+            // positioning
+            position: absolute;
+            top: -130px;
+            left: -450px;
+            z-index: -1;
+            // box model
+            height: 826px;
+            width: 974px;
+            // visual
+            background-image: url('../../assets/img/soap-left.png')
+        }
+    }
+    &__description {
+        // positioning
+        position: relative;
+        // box model
+        // padding: 20px;
+        padding-bottom: 20px;
+        @include atDesktop {
+            // box model
+            padding: 50px 40px;
+            margin-left: -400px;
+            padding-left: 400px;
+        }
+        &::before {
+            content: "";
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -3;
+            // box model
+            height: 100%;
+            width: 100%;
+            // visual
+            background-color: #ffffff;
+        }
+        &::after {
+            content: "";
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -3;
+            // box model
+            height: 100%;
+            width: 100%;
+            // visual
+            border: 1px solid $justSand;
+        }
+    }
+    &__title {
+        // box model
+        margin-top: 0;
+        // typography
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+        @include atDesktop {
+            // typography
+            font-size: 3rem;
+            font-weight: 300;
+            text-indent: 20px;
+        }
+    }
+    &__text {
+        // typography
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: left;
+        @include atDesktop {
+            // box model
+            padding-left: 25px;
+            // typography
+            font-size: 1.125rem;
+        }
+    }
+    &__buttons {
+        // positioning
+        position: relative;
+        z-index: 5;
+        // box model
+        padding-top: 40px;
+        @include atDesktop {
+            // box model
+            padding-left: 25px;
+        }
+    }
+}

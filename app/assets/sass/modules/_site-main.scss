@@ -1,0 +1,65 @@
+.site-main {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-top: 40px;
+
+    // visual
+    overflow: hidden;
+
+    @include atDesktop {
+        // box model
+        padding-top: 120px;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            z-index: -1;
+
+            // box model
+            height: 100%;
+            height: 1500px;
+            width: 100%;
+            // border: 1px solid red;
+
+            // visual
+            background-image: url('../../assets/img/bg-top-left.jpg'),
+                            url('../../assets/img/bg-top-right.jpg');
+            // background-size: ;
+            background-position: top left, top right;
+            background-repeat: no-repeat;
+        }
+        // &::after {
+        //     content: "";
+
+        //     // positioning
+        //     position: absolute;
+        //     bottom: 0;
+        //     z-index: -1;
+
+        //     // box model
+        //     height: 100%;
+        //     height: 1500px;
+        //     width: 100%;
+        //     // border: 1px solid red;
+
+        //     // visual
+        //     background-image: url('../../assets/img/bg-top-left.jpg'),
+        //                     url('../../assets/img/bg-top-right.jpg');
+        //     // background-size: ;
+        //     background-position: top left, top right;
+        //     background-repeat: no-repeat;
+        // }
+    }
+
+    &--no-bg {
+        &::before {
+            // box model
+            display: none;
+        }
+    }
+}

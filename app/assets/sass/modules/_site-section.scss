@@ -1,0 +1,62 @@
+.site-section {
+    // box model
+    padding-bottom: 100px;
+
+    &__header {
+        // positioning
+        position: relative;
+
+        // box model
+        height: 60px;
+        margin-bottom: 40px;
+        padding-bottom: 70px;
+
+        // typography
+        text-align: center;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            // box model
+            height: 24px;
+            width: 1000px;
+
+            // visual
+            background-image: url("../../assets/img/header-deco.png");
+        }
+    }
+
+    &__title {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        color: rgba($darkBlue, 0.84);
+        // color: transparent;
+        font-family: $captionFont;
+        font-size: 1.5rem;
+        line-height: 1;
+
+        // visual
+        // background-image: -webkit-linear-gradient($darkBlue, #5d4f34);
+        // -webkit-background-clip: text;
+        // opacity: 0.9;
+
+        @include atDesktop {
+            // typography
+            font-size: 2.5rem;
+        }
+    }
+
+    &--selling-features {
+        // typography
+        text-align: center;
+    }
+}

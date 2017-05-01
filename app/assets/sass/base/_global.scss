@@ -1,0 +1,21 @@
+html {
+    // box model
+    box-sizing:  border-box;
+    
+    // visual
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    // typography
+    font-size: 16px;
+
+    // visual
+    background-color: $lightSand;
+}

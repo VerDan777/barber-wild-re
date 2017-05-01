@@ -1,0 +1,147 @@
+.hero {
+    // positioning
+    position: relative; // typography
+    font-size: 0; // visual
+    background-color: #2e2030;
+    @include atDesktop {
+        // box model
+        height: 46.7vw;
+        width: 100%;
+        margin-top: 48px; // visual
+        overflow: hidden;
+        &::after {
+            content: ""; // positioning
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            z-index: 9; // box model
+            height: 60px;
+            width: 100%; // visual
+            opacity: 0.8;
+            background-color: #212121;
+            border-top: 3px double rgba($darkSand, 0.7);
+            border-bottom: 3px double rgba($darkSand, 0.7);
+        }
+    }
+    &__scene {
+        // box model
+        display: none;
+        @include atDesktop {
+            // box model
+            display: block;
+        }
+    }
+    &--about {
+        // box model
+        // height: 500px;
+        .hero__text-content {
+            // positioning
+            right: 200px; // top: 100px;
+            bottom: 150px; // typography
+            text-align: left;
+        }
+    }
+    &__text-content {
+    // box mode
+        // display: none;
+        // visual
+        background-color: rgba($darkGrey, 0.7);
+        border: 3px double rgba($darkSand, 0.5);
+        padding: 40px;
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            right: 65px;
+            bottom: 130px;
+            &::before {
+                content: ""; // positioning
+                position: absolute;
+                top: -3px;
+                left: 50%;
+                transform: translateX(-50%); // box model
+                height: 24px;
+                width: 600px; // visual
+                background-image: url("../../assets/img/hero-deco-up.png");
+            }
+            &::after {
+                content: ""; // positioning
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%); // box model
+                height: 24px;
+                width: 600px; // visual
+                background-image: url("../../assets/img/hero-deco-down.png");
+            }
+        }
+    }
+    &__title {
+        // positioning
+        position: relative;
+        z-index: 2; // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.3em;
+        padding-top: 40px; // typography
+        color: $justSand;
+        font-family: $captionFont;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+        @include atDesktop {
+            // box model
+            padding-top: 0; // typography
+            font-size: 3rem;
+        }
+    }
+    &__motto {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.75em;
+        padding-left: 0.4em; // typography
+        color: $justSand;
+        font-family: $captionFont;
+        font-size: 1rem;
+        line-height: 1.4;
+        text-indent: -1em;
+        text-align: center;
+        @include atDesktop {
+            // typography
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    &__subtitle {
+        // box model
+        margin: 0;
+        padding: 0; // typography
+        color: #ffffff;
+        color: $justSand; // color: $darkSand;
+        // color: #8c7b5e;
+        font-family: $mainFont;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        @include atDesktop {
+            // typography
+            font-size: 1.125rem;
+        }
+    }
+    &__text {
+        // box model
+        // width: 700px;
+        // typography
+        color: $justSand;
+        font-family: $mainFont;
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.4;
+        text-indent: 2em;
+        @include atDesktop {
+            // box model
+            width: 700px; // typography
+            font-size: 1rem;
+        }
+    }
+}

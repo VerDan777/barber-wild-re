@@ -1,0 +1,61 @@
+.social {
+    // positioning
+    position: absolute;
+    bottom: 18px;
+
+    // box model
+    width: 100%;
+    // padding-top: 300px;
+    // border: 1px solid red;
+
+    // typography
+    font-size: 0;
+    text-align: center;
+
+    @include atDesktop {
+        // positioning
+        bottom: 55px;
+    }
+
+    &__icon {
+        // box model
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+        margin: 0 5px;
+
+        // visual
+        background-color: $justSand;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px 0 rgba($darkestSand, 0.45);
+        transition: all 0.3s ease-out;
+
+        @include atDesktop {
+            // box model
+            margin: 0 8px;
+        }
+
+        svg {
+            // box model
+            height: 100%;
+            width: 100%;
+
+            path {
+                fill: $darkestSand;
+            }
+        }
+
+        &:hover {
+            // visual
+            background-color: $darkSand;
+            box-shadow: 2px 4px 14px 0 rgba($darkestSand, 0.45),
+            inset 0 0 1px 0 rgba($darkSand, 0.44);
+            border-radius: 2px;
+
+            svg path {
+                fill: #ffffff;
+            }
+        }
+    }
+}
